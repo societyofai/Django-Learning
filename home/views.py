@@ -4,5 +4,6 @@ from .models import Course
 
 def index(request):
     courses = Course.objects.all()
-    return HttpResponse("home page")
+    # return HttpResponse("home page")
+    return render(request, 'home/index.html')
 
