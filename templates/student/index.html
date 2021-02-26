@@ -2,4 +2,11 @@
 
 {% block content %}
     <p>Hello from student page</p>
+    <p>Student details are as follows - </p>
+    <ol>
+        {% for value in data %}
+            <li>{{ value.name }} {{ value.studentClass }}</li>
+            <br>
+        {% endfor %}
+    </ol>
 {% endblock %}
