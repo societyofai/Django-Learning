@@ -7,3 +7,10 @@ class CourseSerializer(serializers.ModelSerializer):
         model = Course
         fields = '__all__'
         # fields = ('name', )
+
+class AddCourseSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Course
+        fields = ('name', 'description')
+        # fields = ('name', )

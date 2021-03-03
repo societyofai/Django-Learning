@@ -26,7 +26,11 @@ SECRET_KEY = 'gym&xwpwb27-6k&eu#_-#tqdd!s=q_8!o(e$b*nhi$z1h)1cbx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    # 'www.google.com'
+    '10.0.2.2',
+    '127.0.0.1'
+]
 
 
 # Application definition

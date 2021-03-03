@@ -19,7 +19,6 @@ def inputData(request):
     if request.method == 'POST':
         details = StudentForm(request.POST)
         if details.is_valid():
-            print("details===========", details)
             return HttpResponse("details saved")
         return HttpResponse("Error in process student details")
     if request.method == 'GET':
